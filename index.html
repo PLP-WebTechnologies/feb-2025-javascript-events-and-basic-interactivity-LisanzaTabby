@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome to Talitsi Food Delicacies</h1>
+
+  <!-- Button Click -->
+  <button id="myButton">Click Me!</button>
+
+  <!-- Hover Effect -->
+  <div id="hoverElement" class="box">Hover over me!</div>
+
+  <!-- Button to Change Text/Color -->
+  <button id="colorButton">Change Color and Text</button>
+
+  <!-- Image Gallery (Slideshow) -->
+  <div class="images">
+    <img id="image" src="img1.jpg" alt="Image Gallery"width="300">
+    <p>Sumptuous meals</p>
+  </div>
+
+  <!-- Tabs/Accordion -->
+  <div class="tabs">
+    <button class="tab" data-content="tab1Content">Skills</button>
+    <button class="tab" data-content="tab2Content">Experience</button>
+    <button class="tab" data-content="tab3Content">Education</button>
+
+    <div id="tab1Content" class="tab-content">
+      <h3>Skills</h3>
+      <ul>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Git & GitHub</li>
+      </ul>
+
+      <!-- Feed under the Skills tab -->
+      <div id="skillsFeed">
+        <h4>Recent Skills Development:</h4>
+        <ul>
+          <li>Completed JavaScript course on <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</li>
+          <li>Started learning React.js for building dynamic web apps.</li>
+          <li>Working on a Node.js project for backend development.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="tab2Content" class="tab-content">
+      <h3>Experience</h3>
+      <p><strong>Web Developer</strong> PLP (Feb 2025 - Present)</p>
+      <p>Worked on full-stack web development with JavaScript, React, and Node.js, focusing on building user-friendly web applications.</p>
+      <p><strong>Intern</strong> at Lotus Ltd. (2022 - Present)</p>
+      <p>Assisted in designing responsive user interfaces and maintaining databases, while learning various tools such as Git, MySQL, and HTML/CSS.</p>
+
+      <!-- Feed under the Experience tab -->
+      <div id="experienceFeed">
+        <h4>Recent Experience Updates:</h4>
+        <ul>
+          <li>Built a fully functional e-commerce platform as part of a team project.</li>
+          <li>Contributed to the development of a customer service chatbot for a client.</li>
+          <li>Enhanced website performance by optimizing front-end code, reducing page load time by 25%.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="tab3Content" class="tab-content">
+      <h3>Education</h3>
+      <p><strong>Bachelor of Computer Science</strong> at XYZ University (2017 - 2021)</p>
+      <p>Specialization in Software Development and Web Technologies, with coursework in algorithms, data structures, and database management.</p>
+
+      <!-- Feed under the Education tab -->
+      <div id="educationFeed">
+        <h4>Recent Education Achievements:</h4>
+        <ul>
+          <li>Graduated with honors, GPA: 3.9/4.0</li>
+          <li>Completed a capstone project on building a weather forecasting app using React and Node.js.</li>
+          <li>Participated in the university’s hackathon and won 2nd place for a mobile app idea.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Validation -->
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <div id="emailFeedback"></div>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <div id="passwordFeedback"></div>
+
+    <button type="submit" id="submitButton">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
