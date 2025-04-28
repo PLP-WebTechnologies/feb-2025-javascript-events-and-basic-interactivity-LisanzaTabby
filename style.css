@@ -54,6 +54,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+  .box:hover{
+    font-weight: 800;
+  }
   
   /* Tabs Styling */
   .tabs {

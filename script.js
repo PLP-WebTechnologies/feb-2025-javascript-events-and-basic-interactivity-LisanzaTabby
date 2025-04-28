@@ -5,7 +5,7 @@ document.getElementById('myButton').addEventListener('click', function() {
   
   // Hover Effect
   document.getElementById('hoverElement').addEventListener('mouseover', function() {
-    this.style.backgroundColor = 'lightblue';
+    this.style.backgroundColor = 'aqua';
   });
   document.getElementById('hoverElement').addEventListener('mouseout', function() {
     this.style.backgroundColor = '';
